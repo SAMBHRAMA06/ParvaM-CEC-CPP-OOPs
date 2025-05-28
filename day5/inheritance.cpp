@@ -28,6 +28,13 @@ class Parent{ //Base class
 
 //syntax for declaring the dervied class:
 //class derived-class-name :accessiblity -mode base class-name
+//1)By default: Derive class use private asccessubulity mode
+
+//2)If derived class uses private accessiblity mode then public data
+//       members and member functions of the base class will become private
+
+//3)If derived class uses public accessiblity mode then public data
+//       members and member functions of the base class will become public
 
 class Child : public Parent { //Derived class
     public:
@@ -59,6 +66,8 @@ int main() {
     cin >> childName >> childAge;
 
     Child c1;
+    // c1.family_head; (As child/derived ckass us deruved with public -accessiblity mode
+    // we can direclty access the public data of the base class)
     c1.setData(fworth, fName, fHead, fMembers);
     c1.addDetails(childName, childAge);
     c1.getFamilyDetails();
