@@ -6,7 +6,7 @@ class Calculate{
         int result;
         float res;
 
-        int sum (int num){
+        int sum (int num){ //sum function expecting 1 parameter
             result = num + num;
             return result;
         }

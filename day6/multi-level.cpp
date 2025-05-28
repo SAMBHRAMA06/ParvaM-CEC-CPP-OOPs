@@ -65,6 +65,10 @@ int main(){
     cin >> dept_Name >> devExperience;
 
     Developer dev1; //Object of derived class
+    //dept1.deptName -cannot access the private member out of the class (developer)
+    //dept1.Name -cannot access the private member out of the class(Employee)
+    //dept1.companyName -cannot access the private member out of the class (person)
+
     dev1.setPersonDetails(personName, personAge); //Calling base class function
 
     dev1.setEmployeeDetails(companyName, employee_id); //Calling derived class function

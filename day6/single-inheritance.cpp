@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Vehicle{
+class Vehicle{ //Base class
     private:
         string riding_mode;
     public:
@@ -14,7 +14,7 @@ class Vehicle{
         }
 };
 
-class Bike : public Vehicle {
+class Bike : public Vehicle {  //Derived Class can access the data and meber function of base class (via public)
     private:
         string brand;
     public:
@@ -33,8 +33,8 @@ int main(){
     cout << "Enter the Mode of Transport & Brand nmae of your bike:";
     cin >> mode_of_transport >> brand_name;
 
-    Bike bike1;
-    bike1.setMode(mode_of_transport);
+    Bike bike1;//Object of derived class
+    bike1.setMode(mode_of_transport); //Acess the member function of Base class (Inheriting the properties)
     bike1.setName(brand_name);
 
     cout << "I've a "<< bike1.showName() << " bike, I can travel to my native via " << bike1.useMode();

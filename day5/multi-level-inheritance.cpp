@@ -25,23 +25,38 @@ class Carnivore : public Animal { //Derived class / Base class - Level 1
        }
 };
 
+};
+
 //Mammal -> Carnivore - (Symbolic representation)
 class Mammal : public Carnivore { //Derived class / Base class - Level 2
+    string habitat;
     public:
-        //showFood();
-    
-   
+        void setHabitat(string place) {
+           habitat = place;
+       }
+
+        void showHabitat() {
+           cout << "Living Place: " << habitat << endl;
+       }
+
 };
 
 int main(){
-    string animal_Name, food_type;
+    string animal_Name, food_type, Place_Of_living;
 
     cout << "Enter the name of the animal & and its food type: ";
-    cin >> animal_Name >> food_type;
+    cin >> animal_Name >> food_type >> Place_Of_living;
 
     Carnivore c1; //Object of derived class
-    c1.setName(animal_Name); //Calling base class function
+    c1.setName(animal_Name);
+    c1.setFood(food_type); //Calling base class function
 
     Mammal m1; //Object of derived class
+    m1.setName(animal_Name);
     m1.setFood(food_type);
+    m1.setHabitat(Place_Of_living); //Calling base class function
+
+    m1.showAnimal(); 
+    m1.showFood();        
+    m1.showHabitat(); 
 }
