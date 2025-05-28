@@ -36,6 +36,8 @@ class Parent{ //Base class
 //3)If derived class uses public accessiblity mode then public data
 //       members and member functions of the base class will become public
 
+//4) derived class acnnot inherit the data and member functions of private memvers of base class
+
 class Child : public Parent { //Derived class
     public:
         string member_name;
