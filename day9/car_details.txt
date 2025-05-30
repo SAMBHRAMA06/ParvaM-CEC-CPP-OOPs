@@ -1,0 +1,22 @@
+The Car Details are as follows:
+Car Brand: tata
+Car Model: curvv
+Car Variant: petrol
+Launch Year: 2025
+Offer Price: Rs.45556565
+Car has these features: 
+	1. auto gear
+	2. 4doors
+--------------------------------------------
+The Car Details are as follows:
+Car Brand: Audi
+Car Model: Q6
+Car Variant: Petrol
+Launch Year: 2019
+Offer Price: Rs.1200005
+Car has these features: 
+	1. 4 doors
+	2. auto gear
+	3. open roof
+	4. auto drive
+--------------------------------------------
