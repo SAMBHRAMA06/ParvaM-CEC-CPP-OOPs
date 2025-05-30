@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class Employee{
+class Employee{ //Base class
     private:
         string EmployeeName, employeeID;
         int experience;
@@ -23,8 +23,8 @@ class Employee{
         }
 };
 
-class Skill : public Employee{
-    private:
+class Skill : public Employee{  //Derived class(single inheritance)
+    private: 
         int skillCount;
         string skills[10];
 
@@ -62,8 +62,9 @@ int main(){
     cout << "Salary: ";
     cin >> emp_salary;
 
+    // Pointer referring to the object s1 of skilll which can also inherit the properties of employee class
     Skill s1;
-    Skill *emp1 = &s1; // Pointer to Skill object
+    Skill *emp1 = &s1; 
     emp1->addDetails(emp_id, emp_name, emp_exp, emp_salary);
 
     cout << "Enter the number of technologies you know: " << endl;

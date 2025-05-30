@@ -1,0 +1,1 @@
+Writtten in the file using another user-defined ogject: fout
